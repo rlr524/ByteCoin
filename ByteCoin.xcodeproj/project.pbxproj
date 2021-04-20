@@ -13,6 +13,7 @@
 		D4A30733262F7B9700A45A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A30731262F7B9700A45A27 /* Main.storyboard */; };
 		D4A30735262F7B9900A45A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A30734262F7B9900A45A27 /* Assets.xcassets */; };
 		D4A30738262F7B9900A45A27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A30736262F7B9900A45A27 /* LaunchScreen.storyboard */; };
+		D4A30746262F7C8E00A45A27 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A30745262F7C8E00A45A27 /* CoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		D4A30734262F7B9900A45A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4A30737262F7B9900A45A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4A30739262F7B9900A45A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4A30745262F7C8E00A45A27 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		D4A3074A262F7E9800A45A27 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +59,41 @@
 		D4A3072A262F7B9700A45A27 /* ByteCoin */ = {
 			isa = PBXGroup;
 			children = (
+				D4A30744262F7C7800A45A27 /* Model */,
 				D4A3072B262F7B9700A45A27 /* AppDelegate.swift */,
 				D4A3072D262F7B9700A45A27 /* SceneDelegate.swift */,
-				D4A3072F262F7B9700A45A27 /* ViewController.swift */,
-				D4A30731262F7B9700A45A27 /* Main.storyboard */,
+				D4A30742262F7C6400A45A27 /* Controller */,
+				D4A30748262F7CB000A45A27 /* View */,
 				D4A30734262F7B9900A45A27 /* Assets.xcassets */,
 				D4A30736262F7B9900A45A27 /* LaunchScreen.storyboard */,
 				D4A30739262F7B9900A45A27 /* Info.plist */,
+				D4A3074A262F7E9800A45A27 /* Config.xcconfig */,
 			);
 			path = ByteCoin;
+			sourceTree = "<group>";
+		};
+		D4A30742262F7C6400A45A27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4A3072F262F7B9700A45A27 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D4A30744262F7C7800A45A27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4A30745262F7C8E00A45A27 /* CoinManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4A30748262F7CB000A45A27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4A30731262F7B9700A45A27 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A30746262F7C8E00A45A27 /* CoinManager.swift in Sources */,
 				D4A30730262F7B9700A45A27 /* ViewController.swift in Sources */,
 				D4A3072C262F7B9700A45A27 /* AppDelegate.swift in Sources */,
 				D4A3072E262F7B9700A45A27 /* SceneDelegate.swift in Sources */,
@@ -289,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47E3RRLYKE;
 				INFOPLIST_FILE = ByteCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47E3RRLYKE;
 				INFOPLIST_FILE = ByteCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
